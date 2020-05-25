@@ -12,9 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba8a9db1-7e54-4ace-a3ad-5517d9788196" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +189,7 @@
       <workItem from="1590374973126" duration="88000" />
       <workItem from="1590375089463" duration="1260000" />
       <workItem from="1590391166779" duration="884000" />
-      <workItem from="1590392086547" duration="6890000" />
+      <workItem from="1590392086547" duration="8203000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1590321665698</created>
@@ -208,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590373164382</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore ide-helperの導入">
+      <created>1590399368575</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590399368575</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +234,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="chore ファイルの整理" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore ファイルの整理" />
+    <MESSAGE value="chore ide-helperの導入" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore ide-helperの導入" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="275" key="#Notifications" timestamp="1590392105211">
