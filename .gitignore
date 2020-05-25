@@ -1,12 +1,29 @@
+# Intellij
+/.idea
+
+# node files
 /node_modules
+
+# composer packages
+/vendor
+
+# Homestead
+Homestead.json
+Homestead.yaml
+
+# Laravel Directory
 /public/hot
 /public/storage
 /storage/*.key
-/vendor
-.env
-.env.backup
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
+
+# Log File
 npm-debug.log
 yarn-error.log
+.phpunit.result.cache
+
+# Environment Variables
+.env
+.env.backup
+
+# Mac OS
+.DS_Store
