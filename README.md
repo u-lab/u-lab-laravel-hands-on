@@ -21,6 +21,13 @@ API仕様書は SwaggerEditor に定義ファイルの内容を入力して参�
 Swagger Editor: [https://editor.swagger.io](https://editor.swagger.io)  
 API 仕様書: [api-document.yaml](api/api-document.yaml) 
 
+## Database 仕様書
+
+[MySQL Workbench](https://www.mysql.com/jp/products/workbench/) を使用しています。
+
+Database ER図(png): [database-er.png](.docs/database-er.png)  
+Database ER図(mwb): [database-er.mwb](.docs/database-er.mwb)
+
 ## Laravel 起動
 
 1. XAMPPなどでDBを立ち上げる
