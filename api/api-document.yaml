@@ -6,7 +6,7 @@ info:
   version: "1.0.0"
   title: "U-lab Laravel hands on"
 servers:
-  - url: http://localhost:8080/api/v1
+  - url: http://localhost:8000/api/v1
 tags:
   - name: "hello"
     description: "Hello World"
