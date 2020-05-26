@@ -44,7 +44,7 @@ Composerに関しては、動けばいいので、参考記事の方法以外で
 
 ### 手順 3 
 
-1. 本リポジトリをcloneする
+1. [本リポジトリ](https://github.com/u-lab/u-lab-laravel-hands-on) をcloneする
 2. Terminal で `composer install`を入力。
 3. サーバー起動 `php artisan serve` を入力。
 4. ブラウザで `http://localhost:8000` にアクセス。

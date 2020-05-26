@@ -18,7 +18,7 @@ PHPフレームワークLaravelの使い方を実際にデモアプリを作り�
 
 API仕様書は SwaggerEditor に定義ファイルの内容を入力して参照してください。
 
-Swagger Editor: [https://editor.swagger.io](https://editor.swagger.io)
+Swagger Editor: [https://editor.swagger.io](https://editor.swagger.io)  
 API 仕様書: [api-document.yaml](api/api-document.yaml) 
 
 ## Laravel 起動
