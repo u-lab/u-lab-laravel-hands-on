@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/v1/hello', 'HelloController@index');
 
+Route::get('/v1/hello/var', 'HelloController@varIndex');
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
