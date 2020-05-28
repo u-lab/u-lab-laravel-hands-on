@@ -51,7 +51,6 @@ class HelloController extends Controller
         //     ['ghi', 'jkl']
         // ];
 
-
         // object
         $arr = [
             "data" => ['abc', 'edf'],
@@ -61,5 +60,62 @@ class HelloController extends Controller
         // $data = $arr["data"]; // dataだけを取り出す
 
         return $arr;
+    }
+
+    public function foreachFunc()
+    {
+        $arr = [
+            ['abc', 'edf'],
+            ['ghi', 'jkl']
+        ];
+
+        $str = '';
+        foreach ($arr as $value) { // $value = ['abc', 'edf'] 1行目
+            $str .= $value[0];
+            $str .= $value[1];
+            $str .= ' ';
+        }
+
+        //TODO: abcedf ghijkl
+        return $str;
+    }
+
+    public function foreachObjFunc()
+    {
+        // object
+        $arr = [
+            "data" => ['abc', 'edf'],
+            "meta" => ['ghi', 'jkl']
+        ];
+
+        foreach ($arr as $key => $value) {
+            // $key = "data"
+            // $value = ['abc', 'edf']
+            \Log::debug($key);
+            \Log::debug($value);
+        }
+
+        return "ok";
+    }
+
+    public function arrLast()
+    {
+        $arr = [1, 2, 4, 7, 9]; // 1次元
+
+        $arr[] = 1000;
+
+        // $arr = [1, 2, 4, 7, 9, 1000]
+    }
+
+    public function funcFunc()
+    {
+        $name = $this->getName();
+
+        return 'My name is ' . $name;
+    }
+
+    public function getName()
+    {
+        return 'Hoge';
     }
 }
