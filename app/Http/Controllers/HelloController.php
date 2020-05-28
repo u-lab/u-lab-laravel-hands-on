@@ -42,4 +42,24 @@ class HelloController extends Controller
 
         return $implode;
     }
+
+
+    public function arr2()
+    {
+        // $arr = [
+        //     ['abc', 'edf'],
+        //     ['ghi', 'jkl']
+        // ];
+
+
+        // object
+        $arr = [
+            "data" => ['abc', 'edf'],
+            "meta" => ['ghi', 'jkl']
+        ];
+
+        // $data = $arr["data"]; // dataだけを取り出す
+
+        return $arr;
+    }
 }
