@@ -26,4 +26,20 @@ class HelloController extends Controller
 
         return $result;
     }
+
+    public function strImplode()
+    {
+        $str1 = 'hello';
+        $str2 = 'world';
+
+        // $str1 .= $str2; // 'helloworld'
+
+        // 文字列結合 1
+        $implode = $str1 . ' ' . $str2 ; // hello world
+
+        // 文字列結合 2
+        // $implode = "{$str1} ああ {$str2}";
+
+        return $implode;
+    }
 }

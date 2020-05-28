@@ -14,9 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Hello
 Route::get('/v1/hello', 'HelloController@index');
 
+// 変数宣言
 Route::get('/v1/hello/var', 'HelloController@varIndex');
+
+// 文字列結合
+Route::get('/v1/hello/str-implode', 'HelloController@strImplode');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
