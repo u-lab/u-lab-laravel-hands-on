@@ -35,6 +35,12 @@ use Illuminate\Support\Facades\Route;
 // 端末 API KEY 生成
 Route::post('/v1/key', 'Api\KeyController@generate');
 
+// Userデータの取得
+Route::get('/v1/user', 'Api\UserController@show');
+
+// Userデータの更新
+Route::patch('/v1/user', 'Api\UserController@update');
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
