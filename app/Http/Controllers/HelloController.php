@@ -37,6 +37,8 @@ class HelloController extends Controller
         // 文字列結合 1
         $implode = $str1 . ' ' . $str2 ; // hello world
 
+        \Log::debug($implode);
+
         // 文字列結合 2
         // $implode = "{$str1} ああ {$str2}";
 
@@ -76,7 +78,7 @@ class HelloController extends Controller
             $str .= ' ';
         }
 
-        //TODO: abcedf ghijkl
+        // TODO: abcedf ghijkl
         return $str;
     }
 
@@ -96,6 +98,23 @@ class HelloController extends Controller
         }
 
         return "ok";
+    }
+
+    public function exampleArr()
+    {
+        // 配列のkey名と値を表現する方法。
+        $arr = [
+            "キー名1" => "値1",
+            "キー名2" => "値2",
+            "キー名3" => "値3"
+        ];
+
+        // 比較演算子
+        if ($num1 <= $num2) {
+
+        } else if ($num1 >= $num2) {
+
+        }
     }
 
     public function arrLast()
