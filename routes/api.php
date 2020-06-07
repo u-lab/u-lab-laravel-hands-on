@@ -14,23 +14,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Hello
-Route::get('/v1/hello', 'HelloController@index');
+//// Hello
+//Route::get('/v1/hello', 'HelloController@index');
+//
+//// 変数宣言
+//Route::get('/v1/hello/var', 'HelloController@varIndex');
+//
+//// 文字列結合
+//Route::get('/v1/hello/str-implode', 'HelloController@strImplode');
+//
+//// 連想配列
+//Route::get('/v1/hello/array2', 'HelloController@arr2');
+//
+//// foreach
+//Route::get('/v1/hello/foreach', 'HelloController@foreachFunc');
+//
+//// function
+//Route::get('/v1/hello/function', 'HelloController@funcFunc');
 
-// 変数宣言
-Route::get('/v1/hello/var', 'HelloController@varIndex');
+// 端末 API KEY 生成
+Route::post('/v1/key', 'Api\KeyController@generate');
 
-// 文字列結合
-Route::get('/v1/hello/str-implode', 'HelloController@strImplode');
+// Userデータの取得
+Route::get('/v1/user', 'Api\UserController@show');
 
-// 連想配列
-Route::get('/v1/hello/array2', 'HelloController@arr2');
-
-// foreach
-Route::get('/v1/hello/foreach', 'HelloController@foreachFunc');
-
-// function
-Route::get('/v1/hello/function', 'HelloController@funcFunc');
+// Userデータの更新
+Route::patch('/v1/user', 'Api\UserController@update');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
