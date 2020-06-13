@@ -23,6 +23,19 @@ class UserLocationController extends Controller
             return abort('401'); // 認証エラー
         }
         // end Middleware で処理がいい
+
+        // start 処理を書く
+
+        // hint where を使って、userを絞る
+
+        $user_location = UserLocation::paginate(10); // ぺーじねーしょんのしょりをする
+
+        // end
+
+
+        return [
+            "data" => $user_location
+        ];
     }
 
     /**
