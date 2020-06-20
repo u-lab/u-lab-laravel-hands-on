@@ -11,6 +11,9 @@ class UserLocationController extends Controller
 {
     /**
      * ユーザーの位置情報を取得
+     *
+     * @param Request $request
+     * @return object|void
      */
     public function index(Request $request)
     {
@@ -24,22 +27,19 @@ class UserLocationController extends Controller
         }
         // end Middleware で処理がいい
 
-        // start 処理を書く
+        // ユーザー情報の取得
+        $user = User::where('token', '=', $token)->first();
+        // 最新の10県を取得する
+        $user_location = UserLocation::where('user_id', '=', $user->id)->paginate(10);
 
-        // hint where を使って、userを絞る
-
-        $user_location = UserLocation::paginate(10); // ぺーじねーしょんのしょりをする
-
-        // end
-
-
-        return [
-            "data" => $user_location
-        ];
+        return $user_location;
     }
 
     /**
      * ユーザーの位置情報を記録
+     *
+     * @param Request $request
+     * @return array|void
      */
     public function create(Request $request)
     {
