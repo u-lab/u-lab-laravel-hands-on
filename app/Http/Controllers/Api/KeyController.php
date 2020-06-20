@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Api\UserFormRequest;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -16,7 +17,7 @@ class KeyController extends Controller
      *
      * @param Request $request リクエスト
      */
-    public function generate(Request $request)
+    public function generate(UserFormRequest $request)
     {
         $name = $request->name; // userの入力値の取得
         $uuid = Str::uuid(); // uuidの生成
