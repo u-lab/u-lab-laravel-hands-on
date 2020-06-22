@@ -36,16 +36,22 @@ use Illuminate\Support\Facades\Route;
 Route::post('/v1/key', 'Api\KeyController@generate');
 
 // Userデータの取得
-Route::get('/v1/user', 'Api\UserController@show');
+Route::get('/v1/user', 'Api\UserController@show')->middlewawre('exsit_token');
 
 // Userデータの更新
-Route::patch('/v1/user', 'Api\UserController@update');
+Route::patch('/v1/user', 'Api\UserController@update')->middlewawre('exsit_token');
 
 // 位置情報取得
-Route::get('/v1/user/location', 'Api\UserLocationController@index');
+Route::get('/v1/user/location', 'Api\UserLocationController@index')->middlewawre('exsit_token');
 
 // 位置情報更新
-Route::post('/v1/user/location', 'Api\UserLocationController@create');
+Route::post('/v1/user/location', 'Api\UserLocationController@create')->middlewawre('exsit_token');
+
+// 公園一覧取得
+Route::get('/v1/park', 'Api\ParkController@index');
+
+// 公園個別データ取得
+Route::get('/v1/park/{id}', 'Api\ParkController@show');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
