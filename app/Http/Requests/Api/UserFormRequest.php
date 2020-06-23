@@ -13,7 +13,9 @@ class UserFormRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        $token = $this->header('X-API-TOKEN');
+
+        return empty($tokdn);
     }
 
     /**

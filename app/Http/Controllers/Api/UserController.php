@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Api\UserFormRequest;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -32,7 +31,7 @@ class UserController extends Controller
         ];
     }
 
-    public function update(UserFormRequest $request)
+    public function update(Request $request)
     {
         // start Middleware で処理がいい
         $token = $request->header('X-API-TOKEN');
